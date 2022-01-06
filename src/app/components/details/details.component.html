@@ -1,7 +1,7 @@
 <div class="details">
   <div class="game-banner">
     <img
-      src="{{ game.background_image }}"
+      [src]="game.background_image"
       alt="background image"
       class="game-banner-img"
     />
@@ -38,6 +38,7 @@
           </a>
         </div>
       </div>
+      <app-game-tabs [game]="game"></app-game-tabs>
     </div>
   </div>
 </div>
